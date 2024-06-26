@@ -1,0 +1,322 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+a {
+    visibility: none;
+}
+
+nav {
+    position: relative;
+    width: 100vw;
+    margin-bottom: 10rem;
+}
+
+.hiden {
+    display: none;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #ffbbcc;
+}
+
+.topnav {
+    background: #ffe1e1;
+    box-shadow: 0 5px 60px rgba(0, 0, 0, 0.422);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    padding-bottom: 20px;
+    height: 5rem;
+    position: fixed;
+    width: 100vw;
+    z-index: 4;
+}
+
+.topnav h1 {
+    text-align: center;
+    color: #ffaacf;
+}
+
+#lips,
+#palettes,
+#eye,
+#bags,
+#make-up-sets {
+    border-bottom: 1rem dotted #240a34;
+}
+
+.container {
+    padding-top: 5rem;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #ffbbcc;
+}
+
+.container h1 {
+    margin-left: 4rem;
+    margin-top: 2rem;
+    font-size: 4rem;
+    color: #ffeecc;
+}
+
+.container ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10rem;
+}
+
+.container ul li {
+    width: 32rem;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    list-style-type: none;
+    margin: 4rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    box-shadow: 4px 0px 40px #240a34;
+}
+
+.container ul li span {
+    font-size: 5rem;
+    color: #ac59a0;
+    text-transform: capitalize;
+    background-color: #ffc4ff;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.container ul .card1,
+.container ul .card2,
+.container ul .card3,
+.container ul .card5,
+.container ul .card4 {
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+    transition: all 0.2s;
+}
+
+.container ul .card1:hover,
+.container ul .card2:hover,
+.container ul .card3:hover,
+.container ul .card5:hover,
+.container ul .card4:hover {
+    filter: grayscale(10%);
+    -webkit-filter: grayscale(10%);
+    transition: all 0.2s;
+    box-shadow: 0px 5px 50px #240a34;
+}
+
+.container ul .card1 {
+    background-image: url("../images/lip-make-up.webp");
+    background-color: red;
+}
+
+.container ul .card2 {
+    background-image: url("../images/powder.webp");
+    background-color: green;
+}
+
+.container ul .card3 {
+    background-image: url("../images/eye-make-up.jpeg");
+}
+
+.container ul .card4 {
+    background-image: url("../images/make-up-set.webp");
+}
+
+.container ul .card5 {
+    background-image: url("../images/hermes-cover.webp");
+}
+
+.hiden-text {
+    display: none;
+}
+
+footer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -3;
+    background-color: #fdcedf;
+}
+
+footer .bye-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer .bye-card h1 {
+    font-size: 5rem;
+    color: #f9f5f6;
+
+    padding-top: 3rem;
+}
+
+footer .bye-card .right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    width: 50vh;
+    gap: 3rem;
+}
+
+footer .bye-card .right a {
+    text-decoration: none;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #f9f5f6;
+    font-size: 2rem;
+    color: #5c8984;
+    max-width: 15rem;
+    text-align: center;
+}
+
+footer .bye-card .right a:hover {
+    padding: 3.5rem;
+    border: 0.5rem;
+    font-size: 1.5rem;
+    background-color: #7d5d8e;
+}
+
+main > article {
+    max-width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10rem;
+    margin: auto;
+    min-height: 100vh;
+
+    .greading {
+        max-width: 35vw;
+        font-size: 2rem;
+        color: #4F325F;
+        font-family: "Merienda", cursive;
+        font-optical-sizing: auto;
+        font-style: normal;
+
+        span {
+            color: #BC70E7;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: #FEF7FF;
+            margin-top: 2rem;
+        }
+    }
+
+    img {
+        width: 40vw;
+        border-radius: 1rem;
+
+    }
+}
+
+main > section {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: #FFE3F0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Merienda", cursive;
+    color: #ADA0FA;
+
+
+    img {
+        width: 40vw;
+        object-fit: contain;
+    }
+
+    h1 {
+        max-width: 40vw;
+
+        span {
+            margin-bottom: 2rem;
+            display: block;
+            span{
+                color: #594DC1;
+                display: inline;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    section .preview-card {
+        margin-bottom: 5rem;
+    }
+
+    .container h1 {
+        font-size: 4rem;
+    }
+
+    .container ul li {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .container ul li span {
+        font-size: 2.5rem;
+    }
+
+    .container ul .card1,
+    .container ul .card2,
+    .container ul .card3,
+    .container ul .card5,
+    .container ul .card4 {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        transition: all 0.2s;
+    }
+
+    .container ul li {
+        padding: 0px;
+        margin: 1rem 0rem;
+    }
+
+    .container ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    footer .bye-card h1 {
+        font-size: 3rem;
+        padding: 3rem;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .bye-card .right {
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+
+    footer .bye-card .right a {
+        width: 15rem;
+    }
+}

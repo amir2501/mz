@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  },
+  "name": "main-menu-for-mz",
+  "version": "1.0.0",
+  "description": "packaje with all nessesary modules",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erkinov Amirbek",
+  "license": "ISC"
+}
