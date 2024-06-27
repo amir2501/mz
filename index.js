@@ -11,7 +11,7 @@ let card_info = [
         title: 'Lip Soufflé Matte Lip Cream',
         des: 'Airy, whipped cream formula glides on easy for full-on color with a featherweight feel.' + 'Velvety matte finish with a soft blurring effect—lips look fuller, smoother, and more plump.\n' + 'Hydrates, softens, and stays put. Lips feel comfortable all day—no drying or caking here!\n' + 'Precise applicator tip makes it easy to apply.',
         price: '19.9',
-        src:"./images/rare.webp"
+        src: "./images/rare.webp"
     },
     {
         type: 'PILLOW KIT\n',
@@ -66,7 +66,7 @@ let card_info = [
         title: 'Jelly Lipstick\n',
         des: 'no information yet...',
         price: '19.9',
-        src: "./images/Jelly lipstick.jpeg"
+        src: './images/jelly-lipstick.jpeg'
 
     },
     {
@@ -192,6 +192,12 @@ app.get('/', async (req, res) => {
     });
 })
 
+app.get('/detailed_info', async (req, res) => {
+    let id = req.query.id;
+    res.render('more_info.ejs', {
+        card_info: card_info[id],
+    })
+})
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
