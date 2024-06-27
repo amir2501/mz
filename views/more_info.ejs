@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>more information</title>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,500&display=swap"
+            rel="stylesheet"
+    />
+
+    <!-- Montserrat font link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
+            rel="stylesheet"
+    />
+
+    <!-- link for fraunces font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap"
+            rel="stylesheet"
+    />
+
+    <!--    link for merindo font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/card-style.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+<header>
+    <div class="topnav">
+        <h1 class="brand-name" style="padding-top: 2rem">Mz Cosmetics</h1>
+    </div>
+</header>
+<main>
+
+
+
+    <section class="container-product">
+        <article class="preview-card">
+            <img src=<%= card_info.src %> alt=<%= card_info.title %> width="500"/>
+
+            <div class="container-text">
+                <p><%= card_info.type %></p>
+                <h1><%= card_info.title %></h1>
+                <p>
+                    <%= card_info.des %>
+                </p>
+                <div class="price">
+                    <ins>$<%= card_info.price %></ins>
+                </div>
+                <a href="/">
+                    Back to main menu
+                </a>
+            </div>
+        </article>
+    </section>
+</main>
+</body>
+</html>

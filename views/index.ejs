@@ -67,7 +67,11 @@
     </article>
 
     <section>
+
         <h1>
+            <span>
+                Why us?
+            </span>
             <span>
                  At <span>MZ Cosmetics</span>, we believe that beauty is an expression of <span>individuality</span> and <span>confidence</span>. Our mission is to
             provide high-quality, innovative cosmetics that enhance your natural beauty and empower you to <span>feel your
@@ -120,19 +124,21 @@
     </div>
 
     <ul>
-        <% for (i in card_info){%>
-        <li>
-            <img src=<%= card_info[i].src%> alt=<%= card_info[i].title%>>
+        <% for (i in card_info){ %>
+            <li>
+                <a href="/detailed_info?id=<%= i %>">
+                    <img src=<%= card_info[i].src %> alt=<%= card_info[i].title %>>
 
-            <h1>
-                <%= card_info[i].title%>
-            </h1>
-            <p>
-                <%= card_info[i].des%>
+                    <h1>
+                        <%= card_info[i].title %>
+                    </h1>
+                    <p>
+                        <%= card_info[i].price %>
 
-            </p>
-        </li>
-        <%}%>
+                    </p>
+                </a>
+            </li>
+        <% } %>
     </ul>
 
     <div id="lips">
